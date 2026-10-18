@@ -1,0 +1,68 @@
+/* Personal photographs anchor the home page; Sakura remains an accent. */
+.cinematic-hero{height:min(850px,88svh);min-height:700px;background:#101c2d;isolation:isolate}
+.cinematic-hero .hero-scene{inset:0;background:radial-gradient(circle at 68% 42%,#46567070,transparent 36%),radial-gradient(circle at 15% 80%,#a4597350,transparent 34%),#101c2d;animation:none!important;transform:none!important}
+.cinematic-hero .hero-shade{z-index:1;background:linear-gradient(90deg,#101c2d 0%,#101c2de8 38%,#101c2d14 68%),linear-gradient(0deg,#0a1524c9,transparent 30%)}
+.cinematic-hero:after{z-index:3;opacity:.6}
+.cinematic-hero .hero-content{max-width:1280px;z-index:4;padding:clamp(205px,24vh,255px) 35px 100px;animation:none}
+.cinematic-hero .hero-note{font-size:13px;letter-spacing:.13em;color:#eabbd1;margin-bottom:25px}
+.cinematic-hero h1{font-family:"Songti SC","Noto Serif CJK SC",serif;font-size:clamp(58px,5.8vw,88px);line-height:1.22;letter-spacing:.015em;font-weight:500;max-width:670px;margin-bottom:29px;text-shadow:0 8px 35px #07111c55}
+.cinematic-hero h1 span{color:#efbed3}
+.cinematic-hero .hero-content p{font-size:16px;line-height:1.9;color:#e3e9f1;max-width:470px}
+.cinematic-hero .hero-actions{margin-top:34px}
+.cinematic-hero .button.primary{background:#f0c7d8;color:#182437;font-weight:600}
+.cinematic-hero .button.ghost{background:#14223588;color:#fff;border-color:#c7d2df88}
+.cinematic-hero .hero-bottom{z-index:5;bottom:31px}
+.hero-visual{position:absolute;z-index:2;top:13%;right:max(2vw,calc((100vw - 1360px)/2));width:min(50vw,685px);height:72%;pointer-events:none}
+.hero-photo{position:absolute;overflow:hidden;background:#26364b;box-shadow:0 28px 60px #050b1770}
+.hero-photo img{width:100%;height:100%;object-fit:cover;display:block}
+.hero-photo:after{content:"";position:absolute;inset:55% 0 0;background:linear-gradient(transparent,#07121cc9)}
+.hero-photo span{position:absolute;z-index:1;left:22px;bottom:17px;color:#fff;font-size:12px;letter-spacing:.06em}
+.hero-photo-main{right:5%;top:0;width:70%;height:100%;border:7px solid #e9edf2;transform:rotate(4deg)}
+.hero-photo-main img{object-position:center 47%}
+.hero-photo-side{left:0;bottom:1%;width:38%;height:49%;border:6px solid #e9edf2;transform:rotate(-8deg)}
+.hero-photo-side img{object-position:center 53%}
+.hero-orbit{position:absolute;inset:-9% -1% -11% 8%;border:1px solid #f3d9e850;border-radius:50%;transform:rotate(-22deg)}
+.hero-orbit:before,.hero-orbit:after{content:"";position:absolute;width:9px;height:9px;border-radius:50%;background:#edb8d0;box-shadow:0 0 30px #efaecf}
+.hero-orbit:before{left:5%;top:30%}.hero-orbit:after{right:7%;bottom:21%}
+@media(prefers-reduced-motion:no-preference){.hero-photo-main{animation:photo-main-arrive 1.15s .15s both}.hero-photo-side{animation:photo-side-arrive 1.25s .4s both}.cinematic-hero .hero-note{animation:copy-arrive .8s .25s both}.cinematic-hero h1{animation:copy-arrive .9s .4s both}.cinematic-hero .hero-content p,.cinematic-hero .hero-actions{animation:copy-arrive .9s .58s both}.hero-orbit{animation:orbit-breathe 12s ease-in-out infinite alternate}@keyframes photo-main-arrive{from{opacity:0;clip-path:inset(0 100% 0 0);transform:translate(45px,20px) rotate(8deg)}to{opacity:1;clip-path:inset(0);transform:rotate(4deg)}}@keyframes photo-side-arrive{from{opacity:0;transform:translate(-35px,55px) rotate(-13deg)}to{opacity:1;transform:rotate(-8deg)}}@keyframes copy-arrive{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:none}}@keyframes orbit-breathe{to{opacity:.5;transform:rotate(-16deg) scale(1.04)}}}
+.home-main{max-width:1320px;padding-left:35px;padding-right:35px}
+.destinations{grid-template-columns:1.2fr 1fr;grid-template-rows:repeat(2,210px);gap:18px;padding:44px 0 85px}
+.destinations>a{height:auto;min-height:0;border-radius:4px;padding:27px 31px}
+.destinations .destination-life{grid-column:1;grid-row:1/3}
+.destinations .destination-study{grid-column:2;grid-row:1}
+.destinations .destination-resources{grid-column:2;grid-row:2}
+.destinations .destination-life img{object-position:center 59%}
+.destinations .destination-life h2{font-size:clamp(30px,3vw,45px)}
+.destinations .destination-life p{font-size:14px}
+.destinations>a:before{background:linear-gradient(0deg,#091828de,transparent 70%)}
+.destinations>a>span:last-child{font-size:28px;transition:transform .35s}
+.destinations>a:hover>span:last-child{transform:translate(4px,-4px)}
+.home-columns{gap:35px}
+.home-discover{margin-top:100px}
+.home-main .section-heading h2{font-size:clamp(30px,3vw,41px)}
+.home-main .section-heading h2:after{width:72px;margin-top:17px}
+.home-main .section-note{font-size:13px;letter-spacing:.05em}
+.home-main .post-card h3{font-size:25px}
+.home-main .post-card-content>p,.home-main .profile p{font-size:14px}
+.home-main .profile{background:#1a2a3d;border-color:#24354a;color:#f4f5f7}
+.home-main .profile-sky{background-image:url('/images/photos/photo-06.jpg');background-position:center 38%}
+.home-main .profile p,.home-main .profile-count,.home-main .aside-note p{color:#c5cfda}
+.home-main .profile-count strong{color:#f2c4d7}
+.home-main .profile .avatar{border-color:#1a2a3d}
+.home-main .profile-link{background:#eec6d7;color:#1a2a3d}
+.home-main .aside-note{border-color:#34465b}
+.home-main .discover-feature{border-radius:4px;min-height:510px}
+.home-main .discover-secondary,.home-main .discover-moment{border-radius:4px}
+.home-main .discover-feature>img{object-position:center 47%}
+.home-main .discover-feature h3{font-size:36px}
+.home-main .discover-feature small,.home-main .discover-feature p{font-size:14px}
+.home-main .discover-moment h3{font-size:25px}
+.home-main .discover-moment p{font-size:14px}
+.section-life .page-hero{background-image:linear-gradient(90deg,#0b1a2eaf,#0b1a2e66),url('/images/photos/photo-02.jpg');background-position:center 56%}
+.section-photos .page-hero{background-image:linear-gradient(90deg,#0b1a2eac,#0b1a2e5e),url('/images/photos/photo-08.jpg');background-position:center 50%}
+.section-about .page-hero{background-image:linear-gradient(90deg,#0b1a2eb5,#0b1a2e68),url('/images/photos/photo-06.jpg');background-position:center 43%}
+.section-life .timeline article,.section-photos .photo-item{border-radius:4px}
+@media(max-width:1050px){.cinematic-hero .hero-content{padding-top:205px}.cinematic-hero h1{font-size:clamp(52px,6vw,74px);max-width:60%}.hero-visual{right:-4%;width:54%;height:67%;top:17%}.home-main{padding-left:25px;padding-right:25px}}
+@media(max-width:760px){.cinematic-hero{height:88svh;min-height:650px;max-height:850px}.cinematic-hero .hero-scene{background:linear-gradient(0deg,#0a1728 2%,#101c2da8 55%,#101c2d77),url('/images/photos/photo-06.jpg') center 49%/cover;opacity:.96}.cinematic-hero .hero-shade{background:linear-gradient(90deg,#071524b8,#08172838)}.cinematic-hero .hero-content{padding:185px 25px 110px}.cinematic-hero h1{max-width:100%;font-size:clamp(45px,10vw,61px);line-height:1.32;margin-bottom:24px}.cinematic-hero .hero-content p{font-size:14px}.cinematic-hero .hero-note{font-size:12px}.hero-visual{display:none}.destinations{grid-template-columns:1fr 1fr;grid-template-rows:220px 150px;gap:12px;padding:28px 0 58px}.destinations .destination-life{grid-column:1/3;grid-row:1}.destinations .destination-study{grid-column:1;grid-row:2}.destinations .destination-resources{grid-column:2;grid-row:2}.destinations>a{padding:18px;border-radius:4px}.destinations .destination-life h2{font-size:31px}.destinations h2{font-size:19px}.destinations p,.destinations .destination-life p{font-size:12px}.destinations>a>span:last-child{font-size:20px}.home-main .section-heading h2{font-size:29px}.home-main .discover-feature{min-height:350px}.home-main .discover-feature h3{font-size:28px}}
+@media(max-width:420px){.cinematic-hero .hero-content{padding-top:166px}.cinematic-hero h1{font-size:43px}.cinematic-hero .hero-actions{gap:9px}.cinematic-hero .hero-actions .button{font-size:12px;padding:10px 13px;gap:8px}.destinations{grid-template-rows:200px 140px}.destinations .destination-life h2{font-size:27px}.destinations h2{font-size:17px}.destinations p{font-size:11px}.home-main .discover-feature h3{font-size:26px}}
+@media(prefers-reduced-motion:reduce){.hero-photo-main{transform:rotate(4deg)}.hero-photo-side{transform:rotate(-8deg)}.hero-orbit{animation:none}}
